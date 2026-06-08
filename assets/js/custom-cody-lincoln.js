@@ -75,10 +75,10 @@ showTeamButton.addEventListener('click', () => {
     let anyHidden = false;
     extraMembers.forEach(member => {
         member.classList.toggle('hidden');
+        document.getElementById('team').scrollIntoView({ behavior: 'smooth' });
         if (member.classList.contains('hidden')) {
             showTeamButton.textContent = 'Show All Members';
             anyHidden = true;
-            document.getElementById('team').scrollIntoView({ behavior: 'smooth' });
         } else {
             showTeamButton.textContent = 'Hide Extra Members';
         }
