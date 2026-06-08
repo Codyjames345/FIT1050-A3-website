@@ -98,7 +98,7 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after, body.is-re
 
 /* Type */
 body, input, select, textarea {
-  color: #a996aa;
+  color: #6b506c;
   font-family: "Playfair Display", sans-serif;
   font-size: 13pt;
   font-weight: 400;
@@ -1523,7 +1523,7 @@ input[type=radio] + label:before {
 }
 input[type=checkbox] + label,
 input[type=radio] + label {
-  color: #a996aa;
+  color: #6b506c;
   cursor: pointer;
   display: inline-block;
   font-size: 1em;
@@ -2443,7 +2443,7 @@ button:disabled,
 }
 #search form:before {
   transform: scaleX(-1);
-  color: #a996aa;
+  color: #6b506c;
   content: "\f002";
   cursor: default;
   display: block;
@@ -2620,14 +2620,14 @@ button:disabled,
     width: 7.25em;
   }
   #sidebar .toggle:before {
-    color: #a996aa;
+    color: #6b506c;
     margin-left: -0.0625em;
     margin-top: -0.25em;
     font-size: 1.1rem;
     z-index: 1;
   }
   #sidebar .toggle:after {
-    background: rgba(249.7947368421, 248.6447368421, 249.8552631579, 0.75);
+    background: rgba(193.1728723404, 172.5638297872, 193.9361702128, 0.75);
     border-radius: 0.375em;
     content: "";
     height: 3.5em;
