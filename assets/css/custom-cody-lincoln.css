@@ -116,6 +116,18 @@
     font-size: 0.85em;
 }
 
+/* Testimonial styles */
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.testimonials blockquote {
+    flex: 1;
+}
+
 /* Form styles */
 
 .fields {
@@ -166,4 +178,48 @@ textarea.error {
     justify-content: center;
     gap: 1em;
     margin-top: 1.5em;
+}
+
+/* Sidebar styles */
+
+.social-cards {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.social-cards li a {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    padding: 0.75em 1em;
+    border: 1px solid rgba(210, 215, 217, 0.75);
+    border-radius: 0.375em;
+    text-decoration: none;
+    color: #1c2439;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.social-cards li a:hover {
+    background-color: #fb613d;
+    border-color: #fb613d;
+}
+
+.social-cards li a .icon {
+    font-size: 1.25em;
+    width: 1.5em;
+    text-align: center;
+}
+
+.social-cards li a:hover span {
+    color: white;
+}
+
+.social-cards .fa-external-link-alt {
+    margin-left: auto;
+    font-size: 0.75em;
+    opacity: 0.75;
 }
