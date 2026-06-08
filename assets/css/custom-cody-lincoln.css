@@ -151,7 +151,7 @@
     flex: 1;
 }
 
-/* Form styles */
+/* Custom styles for form elements */
 
 .fields {
     display: flex;
@@ -194,6 +194,10 @@ textarea.error {
     border-radius: 0.375em;
     margin: 0 auto;
     max-width: 600px;
+}
+
+#contact p {
+    text-align: center;
 }
 
 #contact .actions {
