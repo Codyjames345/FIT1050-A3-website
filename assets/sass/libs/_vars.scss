@@ -1,0 +1,45 @@
+// Misc.
+	$misc: (
+		z-index-base:		10000
+	);
+
+// Duration.
+	$duration: (
+		nav:				0.5s,
+		transition:			0.2s
+	);
+
+// Size.
+	$size: (
+		border-radius:		0.375em,
+		element-height:		2.75em,
+		element-margin:		2em,
+		sidebar-width:		26em,
+		sidebar-width-alt:	24em,
+		gutter:				3em
+	);
+
+// Font.
+	$font: (
+		family:				('Playfair Display', sans-serif),
+		family-heading:		('Roboto Slab', serif),
+		family-fixed:		('Courier New', monospace),
+		weight:				400,
+		weight-bold:		600,
+		weight-heading:		700,
+		weight-heading-alt:	400,
+		kerning-heading:	0.075em
+	);
+
+// “20. Warm with cool shades” by Wix
+// Palette.
+	$palette: (
+		bg:					#ffffff,
+		bg-alt:				#fef3ef,
+		fg:					#a996aa,
+		fg-bold:			#1c2439,
+		fg-light:			#e39586,
+		border:				rgba(210,215,217,0.75),
+		border-bg:			transparentize(#e6ebed, 0.75),
+		accent:				#fb613d
+	);
