@@ -72,13 +72,11 @@ const showTeamButton = document.getElementById('show-full-team');
 const extraMembers = document.querySelectorAll('.member-card.extra-member');
 
 showTeamButton.addEventListener('click', () => {
-    let anyHidden = false;
     extraMembers.forEach(member => {
         member.classList.toggle('hidden');
         document.getElementById('team').scrollIntoView({ behavior: 'smooth' });
         if (member.classList.contains('hidden')) {
             showTeamButton.textContent = 'Show All Members';
-            anyHidden = true;
         } else {
             showTeamButton.textContent = 'Hide Extra Members';
         }
