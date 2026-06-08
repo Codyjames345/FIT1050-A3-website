@@ -9,6 +9,12 @@
     margin-right: 0.5em;
 }
 
+/* Button centering */
+
+.actions {
+    justify-content: center;
+}
+
 /* Custom styles for the hero carousel */
 
 #hero-carousel {
