@@ -1,5 +1,14 @@
 /* Added by Cody Lincoln */
 
+/* Logo styles */
+
+.logo img {
+    height: 2em;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
 /* Custom styles for the hero carousel */
 
 #hero-carousel {
