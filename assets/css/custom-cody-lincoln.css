@@ -295,3 +295,9 @@ textarea.error {
     font-size: 1.5em;
     font-weight: bold;
 }
+
+/* Custom styles for the footer */
+
+#footer .copyright{
+    color: #fb613d;
+}
