@@ -273,6 +273,7 @@ textarea.error {
 .next-event-card {
     border: 1px solid rgba(210, 215, 217, 0.75);
     border-radius: 0.375em;
+    background-color: white;
     overflow: hidden;
 }
 
