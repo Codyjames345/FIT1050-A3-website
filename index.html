@@ -350,13 +350,16 @@
 						<form method="post" action="#">
 							<div class="fields">
 								<div class="field half">
-									<input type="text" name="name" id="name" placeholder="Name" />
+									<label for="name">Name</label>
+									<input label="name" type="text" name="name" id="name" placeholder="e.g. John Doe" />
 								</div>
 								<div class="field half">
-									<input type="email" name="email" id="email" placeholder="Email" />
+									<label for="email">Email</label>
+									<input label="email" type="email" name="email" id="email" placeholder="e.g. john.doe@example.com" />
 								</div>
 								<div class="field">
-									<textarea name="message" id="message" placeholder="Message"></textarea>
+									<label for="message">Message</label>
+									<textarea label="Message" name="message" id="message" placeholder="What's on your mind?"></textarea>
 								</div>
 							</div>
 							<ul class="actions">

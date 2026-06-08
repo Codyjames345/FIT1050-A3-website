@@ -116,9 +116,35 @@
     font-size: 0.85em;
 }
 
-/* Form validation errors */
+/* Form styles */
 .error {
     color: #e05c3a;
     font-size: 0.85em;
     margin-top: 0.25em;
+}
+
+input.error, textarea.error {
+    border-color: #e05c3a;
+    border-width: 2px;
+}
+
+#contact label {
+    margin-bottom: 0.25em;
+}
+
+#contact textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#contact .field {
+    margin-bottom: 1.5em;
+}
+
+#contact form {
+    background: #fef3ef;
+    padding: 2em;
+    border-radius: 0.375em;
+    margin: 0 auto;
+    max-width: 600px;
 }
