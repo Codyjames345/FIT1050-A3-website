@@ -52,6 +52,21 @@
     display: none;
 }
 
+.filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 20px;
+}
+
+.filter-label {
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    color: #a996aa;
+}
+
 /* Custom styles for the team members section */
 
 .extra-member {

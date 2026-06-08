@@ -51,7 +51,7 @@ filterButtons.forEach(button => {
             event.classList.toggle('hidden', !match);
         });
 
-        filterEvents(button.dataset.filter)
+        filterEvents(filter);
     });
 });
 
