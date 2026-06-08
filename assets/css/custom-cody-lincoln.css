@@ -116,7 +116,7 @@
     font-size: 0.85em;
 }
 
-/* Testimonial styles */
+/* Custom styles for the testimonials */
 
 .testimonials {
     display: flex;
@@ -180,7 +180,7 @@ textarea.error {
     margin-top: 1.5em;
 }
 
-/* Sidebar styles */
+/* Custom styles for social media cards in the sidebar */
 
 .social-cards {
     list-style: none;
@@ -222,4 +222,24 @@ textarea.error {
     margin-left: auto;
     font-size: 0.75em;
     opacity: 0.75;
+}
+
+/* Custom styles for the quick facts section */
+
+.quick-facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5em 1em;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-facts dt {
+    font-weight: bold;
+    color: #1c2439;
+}
+
+.quick-facts dd {
+    margin: 0;
+    color: #a996aa;
 }
