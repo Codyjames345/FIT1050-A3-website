@@ -243,3 +243,23 @@ textarea.error {
     margin: 0;
     color: #a996aa;
 }
+
+/* Custom styles for the next event section */
+.next-event-card {
+    border: 1px solid rgba(210, 215, 217, 0.75);
+    border-radius: 0.375em;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.next-event-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.next-event-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    object-fit: cover;
+}
