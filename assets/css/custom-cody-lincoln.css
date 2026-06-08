@@ -24,6 +24,14 @@
     height: 100%;
     opacity: 0;
     transition: opacity 1.5s ease-in-out;
+    object-fit: contain !important;
+    background-color: #fef3ef;
+}
+
+@media (max-width: 1000px) {
+    #hero-carousel .carousel-item {
+        object-fit: cover !important;
+    }
 }
 
 .carousel-item.active {
@@ -49,7 +57,7 @@
 }
 
 .dot.active {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #fb613d;
 }
 
 .dot:hover {
