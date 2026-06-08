@@ -66,3 +66,21 @@ function filterEvents(category) {
         : eventsArray.filter(a => a.dataset.category === category);
     filtered.forEach(a => postsGrid.appendChild(a));
 }
+
+// Show full team functionality
+const showTeamButton = document.getElementById('show-full-team');
+const extraMembers = document.querySelectorAll('.member-card.extra-member');
+
+showTeamButton.addEventListener('click', () => {
+    let anyHidden = false;
+    extraMembers.forEach(member => {
+        member.classList.toggle('hidden');
+        if (member.classList.contains('hidden')) {
+            showTeamButton.textContent = 'Show All Members';
+            anyHidden = true;
+            document.getElementById('team').scrollIntoView({ behavior: 'smooth' });
+        } else {
+            showTeamButton.textContent = 'Hide Extra Members';
+        }
+    });
+});

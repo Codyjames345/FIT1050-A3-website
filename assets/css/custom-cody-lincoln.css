@@ -69,10 +69,6 @@
 
 /* Custom styles for the team members section */
 
-.extra-member {
-    display: none;
-}
-
 .team-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
