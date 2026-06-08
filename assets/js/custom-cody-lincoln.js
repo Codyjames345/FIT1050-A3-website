@@ -84,3 +84,33 @@ showTeamButton.addEventListener('click', () => {
         }
     });
 });
+
+// Contact form validation
+$('form').validate({
+    rules: {
+        name: {
+            required: true,
+            minlength: 2
+        },
+        email: {
+            required: true,
+            email: true
+        },
+        message: {
+            required: true,
+        }
+    },
+    messages: {
+        name: {
+            required: "Please enter your name",
+            minlength: "Your name must be at least 2 characters long"
+        },
+        email: {
+            required: "Please enter your email",
+            email: "Please enter a valid email"
+        },
+        message: {
+            required: "Please enter your message"
+        }
+    }
+});

@@ -115,3 +115,10 @@
 .member-card a {
     font-size: 0.85em;
 }
+
+/* Form validation errors */
+.error {
+    color: #e05c3a;
+    font-size: 0.85em;
+    margin-top: 0.25em;
+}
