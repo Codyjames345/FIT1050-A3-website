@@ -117,6 +117,21 @@
 }
 
 /* Form styles */
+
+.fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.field {
+    width: 100%;
+}
+
+.field.half {
+    width: calc(50% - 0.75em);
+}
+
 .error {
     color: #e05c3a;
     font-size: 0.85em;
@@ -135,10 +150,6 @@ input.error, textarea.error {
 #contact textarea {
     resize: vertical;
     min-height: 100px;
-}
-
-#contact .field {
-    margin-bottom: 1.5em;
 }
 
 #contact form {
