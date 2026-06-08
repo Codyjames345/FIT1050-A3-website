@@ -201,9 +201,6 @@ textarea.error {
 }
 
 #contact .actions {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
     margin-top: 1.5em;
 }
 
