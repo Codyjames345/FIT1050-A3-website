@@ -84,6 +84,7 @@ showTeamButton.addEventListener('click', () => {
 });
 
 // Contact form validation
+// https://jqueryvalidation.org/
 $('form').validate({
     rules: {
         name: {
