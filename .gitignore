@@ -1,3 +1,3 @@
-# Ignore .sass files and main.css.map (not needed for viewing)
+# Ignore sass files (not needed for viewing)
 assets/sass/
 assets/css/main.css.map
