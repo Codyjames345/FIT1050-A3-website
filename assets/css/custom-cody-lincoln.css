@@ -72,3 +72,50 @@
 .extra-member {
     display: none;
 }
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.member-card {
+    border: 1px solid rgba(210, 215, 217, 0.75);
+    border-radius: 0.375em;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.member-card img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    display: block;
+    object-fit: cover;
+}
+
+.member-info {
+    padding: 1.25em;
+}
+
+.team-role {
+    display: block;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    color: #fb613d;
+    margin-bottom: 0.5em;
+}
+
+.member-card h3 {
+   margin-bottom: 0.4em;
+}
+
+.member-card a {
+    font-size: 0.85em;
+}
