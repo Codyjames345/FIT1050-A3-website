@@ -1,3 +1,7 @@
+// Added by Cody Lincoln
+
+
+// Carousel functionality for the homepage
 // Inspired by https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9
 
 const slides = document.querySelectorAll('.carousel-item');
