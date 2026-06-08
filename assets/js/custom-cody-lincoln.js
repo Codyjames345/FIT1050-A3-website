@@ -60,9 +60,9 @@ const eventsArray = Array.from(events);
 const postsGrid = document.querySelector('#events .posts');
 
 function filterEvents(category) {
-  postsGrid.innerHTML = '';
-  const filtered = category === 'all'
-    ? eventsArray
-    : eventsArray.filter(a => a.dataset.category === category);
-  filtered.forEach(a => postsGrid.appendChild(a));
+    postsGrid.innerHTML = '';
+    const filtered = category === 'all'
+        ? eventsArray
+        : eventsArray.filter(a => a.dataset.category === category);
+    filtered.forEach(a => postsGrid.appendChild(a));
 }
