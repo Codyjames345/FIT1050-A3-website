@@ -249,17 +249,31 @@ textarea.error {
     border: 1px solid rgba(210, 215, 217, 0.75);
     border-radius: 0.375em;
     overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.next-event-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+.next-event-details {
+    padding: 1.25em;
 }
 
-.next-event-card img {
-    width: 100%;
-    aspect-ratio: 16 / 9;
+.next-event-details .button {
     display: block;
-    object-fit: cover;
+}
+
+.next-event-date-badge {
+    background-color: #fb613d;
+    color: white;
+    border-radius: 0.375em 0.375em 0 0;
+    padding: 0.75em 1em;
+    text-align: center;
+}
+
+.next-event-date-badge .month {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+}
+
+.next-event-date-badge .day {
+    font-size: 1.5em;
+    font-weight: bold;
 }
