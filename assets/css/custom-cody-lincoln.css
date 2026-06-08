@@ -46,3 +46,14 @@
 .dot:hover {
     background-color: rgba(251, 97, 61, 0.85);
 }
+
+/* Custom styles for the Events filter */
+.hidden {
+    display: none;
+}
+
+/* Custom styles for the team members section */
+
+.extra-member {
+    display: none;
+}

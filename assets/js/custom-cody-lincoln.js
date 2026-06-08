@@ -32,3 +32,23 @@ dots.forEach((dot, index) => {
 });
 
 startCarousel();
+
+// Event filtering functionality
+// Inspired by https://www.w3schools.com/howto/howto_js_filter_elements.asp
+
+const filterButtons = document.querySelectorAll('.filter-button');
+const articles = document.querySelectorAll('#events .posts article');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const filter = button.dataset.filter;
+
+        // Update active button styling
+        filterButtons.forEach(btn => btn.classList.toggle('primary', btn === button));
+
+        articles.forEach(article => {
+            const match = filter === 'all' || article.dataset.category === filter
+            article.classList.toggle('hidden', !match);
+        });
+    });
+});
