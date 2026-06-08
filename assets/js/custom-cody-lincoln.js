@@ -37,7 +37,7 @@ startCarousel();
 // Inspired by https://www.w3schools.com/howto/howto_js_filter_elements.asp
 
 const filterButtons = document.querySelectorAll('.filter-button');
-const articles = document.querySelectorAll('#events .posts article');
+const events = document.querySelectorAll('#events .posts article');
 
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -46,9 +46,23 @@ filterButtons.forEach(button => {
         // Update active button styling
         filterButtons.forEach(btn => btn.classList.toggle('primary', btn === button));
 
-        articles.forEach(article => {
-            const match = filter === 'all' || article.dataset.category === filter
-            article.classList.toggle('hidden', !match);
+        events.forEach(event => {
+            const match = filter === 'all' || event.dataset.category === filter
+            event.classList.toggle('hidden', !match);
         });
+
+        filterEvents(button.dataset.filter)
     });
 });
+
+// Fix weird display of divider lines when filtering events
+const eventsArray = Array.from(events);
+const postsGrid = document.querySelector('#events .posts');
+
+function filterEvents(category) {
+  postsGrid.innerHTML = '';
+  const filtered = category === 'all'
+    ? eventsArray
+    : eventsArray.filter(a => a.dataset.category === category);
+  filtered.forEach(a => postsGrid.appendChild(a));
+}
