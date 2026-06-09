@@ -70,7 +70,8 @@
     background-color: rgba(251, 97, 61, 0.85);
 }
 
-/* Custom styles for the Events filter */
+/* Custom styles for the events section */
+
 .hidden {
     display: none;
 }
@@ -88,6 +89,14 @@
     text-transform: uppercase;
     letter-spacing: 0.075em;
     color: #6b506c;
+}
+
+#events .posts {
+    padding: 1.5em 0;
+}
+
+#events-count {
+    text-align: center;
 }
 
 /* Custom styles for the team members section */

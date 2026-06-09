@@ -59,12 +59,20 @@ filterButtons.forEach(button => {
 const eventsArray = Array.from(events);
 const postsGrid = document.querySelector('#events .posts');
 
+filterEvents('all');
+
 function filterEvents(category) {
     postsGrid.innerHTML = '';
     const filtered = category === 'all'
         ? eventsArray
         : eventsArray.filter(a => a.dataset.category === category);
-    filtered.forEach(a => postsGrid.appendChild(a));
+    
+    // Show up to 4 events to avoid clutter
+    filtered.slice(0, 4).forEach(a => postsGrid.appendChild(a));
+    
+    // Update event count
+    document.getElementById('visible-count').textContent = Math.min(filtered.length, 4);
+    document.getElementById('total-count').textContent = filtered.length;
 }
 
 // Show full team functionality
